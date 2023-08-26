@@ -1,0 +1,324 @@
+/* Apply styles to the body to cover the entire screen */
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  /* 100% of the viewport height */
+  width: 100vw;
+  /* 100% of the viewport width */
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  background-color: #f0f0f0;
+  /* Set a background color */
+}
+
+a, h2, p {
+  text-decoration: none;
+}
+
+h2 {
+  color: black;
+}
+
+main {
+  width: 900px;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 180px;
+  background-image: url(../images/bgHeader.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* POSICIONAMENTO IMAGENS */
+.header_imagens {
+  position: relative;
+}
+
+.header_imagens img {
+  position: absolute;
+}
+
+.mandaTrendHeader {
+  top: 52px;
+  left: 50px;
+  width: 259px;
+  height: auto;
+}
+
+.pointsHeader {
+  top: 136px;
+  left: 330px;
+  width: 50px;
+  height: auto;
+}
+
+.setasHeader {
+  left: 408px;
+  top: 36px;
+  width: 60px;
+  height: auto;
+}
+
+.pessoaSentadaHeader {
+  left: 413px;
+  top: 83px;
+  width: 143px;
+  height: auto;
+}
+
+.escritaHeader {
+  left: 650px;
+  top: 33px;
+  width: 210px;
+  height: auto;
+}
+
+.triangHeader {
+  left: 860px;
+  top: 7px;
+  width: 23px;
+  height: auto;
+}
+
+.minhocaHeader {
+  left: 747px;
+  top: 153px;
+  width: 108px;
+  height: auto;
+}
+
+.linhasHeader {
+  left: -102px;
+  top: 19px;
+  width: 221px;
+  height: auto;
+}
+
+/* GERAL/CORPO */
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: 40px;
+  padding-left: 10px;
+}
+
+/* CONTEUDO PRINCIPAL */
+.conteudo_principal_post_container {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo_principal {
+  width: inherit;
+  height: 450px;
+}
+
+.conteudo_principal_img {
+  width: 100%;
+  height: auto;
+}
+
+.post_principal_subtitulo_e_detalhes {
+  position: relative;
+  bottom: 80px;
+  background-color: white;
+}
+
+.post_principal_subtitulo_e_detalhes h1{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-top: 13px;
+}
+
+.post_principal_subtitulo_e_detalhes p {
+  margin-top: 5px;
+  width: 80%;
+  color: #515050;
+}
+
+.post_principal_subtitulo_e_detalhes img {
+  width: 50%;
+}
+
+/* CONTEUDO SECUNDARIO */
+.conteudo_secundario {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.conteudo_secundario_post_container {
+  width: 42.5%;
+}
+
+.conteudo_secundario_img {
+  width: 100%;
+  height: 204.79px;
+}
+
+.post_secundario_subtitulo_e_detalhes {
+  position: relative;
+  bottom: 35px;
+  background-color: white;
+}
+
+.post_secundario_subtitulo_e_detalhes img {
+  width: 60%;
+}
+
+.conteudo_secundario article:first-child {
+  padding-left: 24px;
+}
+
+.conteudo_secundario article:last-child {
+  padding-right: 24px;
+}
+
+/* FOOTER */
+.footer1 {
+  width: 100%;
+  height: 120px;
+  background-image: url(../images/footerBg.png);
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer2 {
+  background-color: #f0f0f0;
+  text-align: center;
+
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: rgb(94, 92, 92);
+}
+
+.footer2 p:first-child {
+  margin-bottom: 3px;
+}
+
+.footer2 p:last-child {
+  margin-top: 3px;
+}
+
+.footer_escritas {
+  width: 360px;
+  height: auto;
+  text-decoration: none;
+}
+
+/* OUTROS */
+.image_descricao {
+  font-style: italic;
+  color: rgb(192, 186, 186) !important;
+  margin-bottom: 2px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+  /* AJUSTANDO HEADER */
+  .pessoaSentadaHeader, .pointsHeader, .setasHeader, .escritaHeader, .triangHeader, .minhocaHeader, .linhasHeader {
+    display: none;
+  }
+
+  header {
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_imagens img {
+    position: unset;
+  }
+}
+
+/* ALGUNS AJUSTES FEITO EM "TEMPO REAL" */
+@media (max-width: 785px) {
+  main {
+    width: 100%;
+  }
+
+  .conteudo {
+    padding: 0px;
+  }
+
+  .conteudo_principal {
+    width: 100%;
+  }
+
+  .conteudo_secundario {
+    width: 100%;
+    padding-top: 35px;
+  }
+
+  .conteudo_secundario article:first-child{
+    padding-left: 0px;
+  }
+
+  .conteudo_secundario article:last-child{
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .conteudo_principal {
+    height: 350px;
+  }
+
+  .conteudo_secundario_post_container img {
+    height: auto;
+  }
+
+  .footer_escritas {
+    width: 255px;
+  }
+}
+
+@media (min-width: 627px) and (max-width: 703px) {
+  .conteudo_secundario article:last-child {
+    margin-bottom: 28px;
+  }
+
+  .conteudo_secundario {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 626px) {
+  .conteudo_secundario {
+    padding-top: 0px;
+  }
+}
